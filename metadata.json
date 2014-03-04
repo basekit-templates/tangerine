@@ -67,9 +67,9 @@
         },
         "font2": {
             "font-family": "\"PT Serif\", Georgia, serif",
-            "font-size": "28px",
+            "font-size": "24px",
             "font-weight": "inherit",
-            "line-height": "38px",
+            "line-height": "36px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
