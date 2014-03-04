@@ -40,6 +40,9 @@ body {
         }
         &.companyaddress {
             padding: 0 0 2em;
+            p {
+                padding-bottom: 0;
+            }
         }
         &.companyaddress p, &.clicktocall a {
             color: @color-swatch4;
@@ -78,6 +81,9 @@ body {
         }
         &.companyaddress {
             padding: 2em 0;
+            p {
+                padding-bottom: 0;
+            }
         }
         &.companyaddress p, &.clicktocall a {
             color: @color-swatch4;
@@ -145,8 +151,11 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
       }
     }
     @media @tablet {
-    background: @color-swatch1;
-  }
+        background: @color-swatch1;
+    }
+    @media @mobile {
+        padding: 1.4em 0 1.5em;
+    }
  }
 
 

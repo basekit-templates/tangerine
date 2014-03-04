@@ -1,7 +1,7 @@
 {
 	"name":"The Tangerine",
-	"thumbnail":"langkawi.png",
-	"screenshot":"langkawi.png",
+	"thumbnail":"tangerine.png",
+	"screenshot":"tangerine.png",
     "tags": {
     "en": ["clean", "menu", "cafe", "bar", "restaurant"],
     "es": ["limpio", "menú", "cafetería", "bar", "restaurante"],
@@ -136,9 +136,9 @@
         },
         "font10": {
             "font-family": "\"PT Serif\", Georgia, serif",
-            "font-size": "28px",
+            "font-size": "24px",
             "font-weight": "400",
-            "line-height": "40px",
+            "line-height": "36px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         }
