@@ -4,7 +4,7 @@
 
 <div class="bk-pt-homepage">
 
-<div class="desktop">
+<div class="desktop clearfix">
     <div class="left">
         <header class="bk-header companyheader clearfix">
             {{widget('logo', 'desktoplogo', {"defaultlogo": asset('images/logo.png')})|raw}}
@@ -16,7 +16,8 @@
     </div> <!-- end left -->
     <div class="right clearfix">
         <div class="main wrapper clearfix">
-            {{zone('main')|raw}}
+            {{widget('menusections', 'desktopmenusections', {})|raw}}
+            {{widget('menu', 'desktopmenu', {})|raw}}
         </div>  <!-- end main -->
     </div><!-- end right -->
 </div><!-- end desktop -->
