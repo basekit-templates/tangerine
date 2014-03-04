@@ -1,0 +1,40 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<div class="bk-pt-default">
+
+<div class="desktop">
+    <div class="left">
+        <header class="bk-header companyheader clearfix">
+            {{widget('logo', 'desktoplogo', {"defaultlogo": asset('images/logo.png')})|raw}}
+            {{widget('companyname', 'desktopcompanyname', {"business": "profile"})|raw}}
+        </header>  
+        {{widget('extendednavigation', 'desktopnav', {})|raw}}
+        {{widget('companyaddress', 'desktopcompanyaddress', {})|raw}}
+        {{widget('clicktocall', 'desktopclicktocall', {phoneText: '212 6574 6736'})|raw}}
+    </div> <!-- end left -->
+    <div class="right clearfix">
+        <div class="main wrapper clearfix">
+            {{zone('main')|raw}}
+        </div>  <!-- end main -->
+    </div><!-- end right -->
+</div><!-- end desktop -->
+
+
+<div class="tablet-mob wrapper clearfix">
+    {{widget('extendednavigation', 'tabletnav', {})|raw}}
+     <header class="bk-header companyheader clearfix">
+        {{widget('logo', 'tabletlogo', {"defaultlogo": asset('images/logo.png')})|raw}}
+        {{widget('companyname', 'tabletcompanyname', {"business": "profile"})|raw}}
+    </header>  
+    {{widget('companyaddress', 'tabletcompanyaddress', {})|raw}}
+    {{widget('clicktocall', 'tabletclicktocall', {phoneText: '212 6574 6736'})|raw}}     
+<div class="main wrapper clearfix">
+    {{zone('main')|raw}}
+</div> <!-- end main -->
+</div><!-- end tablet-mob -->
+
+</div><!-- end bk-pt-default -->
+
+{% endblock %}

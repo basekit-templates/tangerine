@@ -1,0 +1,146 @@
+{
+	"name":"The Tangerine",
+	"thumbnail":"langkawi.png",
+	"screenshot":"langkawi.png",
+    "tags": {
+    "en": ["clean", "menu", "cafe", "bar", "restaurant"],
+    "es": ["limpio", "menú", "cafetería", "bar", "restaurante"],
+    "br": ["limpo", "menu", "cafeteria", "bar", "restaurante"]
+    },
+	"colorSwatches":
+    {
+        "Swatch 1": {
+            "color1":"#f0e3d2",
+            "color2":"#e5e4e0",
+            "color3":"#bb5a4a",
+            "color4":"#372f2c",
+            "color5":"#8f8682",
+            "color6":"#372f2c",
+            "color7":"#e8d7c4"
+        },
+        "Swatch 2": {
+            "color1":"#ffffff",
+            "color2":"#6DB8BB",
+            "color3":"#6DB8BB",
+            "color4":"#0a2230",
+            "color5":"#686868",
+            "color6":"#ffffff",
+            "color7":"#C7CECD"
+        },
+        "Swatch 3": {
+            "color1":"#ffffff",
+            "color2":"#cbcccc",
+            "color3":"#308BD3",
+            "color4":"#064A80",
+            "color5":"#686868",
+            "color6":"#ffffff",
+            "color7":"#308BD3"
+        },
+        "Swatch 4": {
+            "color1":"#ffffff",
+            "color2":"#cecece",
+            "color3":"#22d7d9",
+            "color4":"#0a2230",
+            "color5":"#686868",
+            "color6":"#ffffff",
+            "color7":"#1f4653"
+        },
+        "Swatch 5": {
+            "color1":"#ffffff",
+            "color2":"#cbcccc",
+            "color3":"#1f4653",
+            "color4":"#0a2230",
+            "color5":"#686868",
+            "color6":"#ffffff",
+            "color7":"#22D9B4"
+        }
+    },
+    "fontSwatch": {
+       "title": "Merriweather",
+        "font1": {
+            "font-family": "\"PT Serif\", Georgia, serif",
+            "font-size": "30px",
+            "font-weight": "400",
+            "line-height": "40px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font2": {
+            "font-family": "\"PT Serif\", Georgia, serif",
+            "font-size": "28px",
+            "font-weight": "inherit",
+            "line-height": "38px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font3": {
+            "font-family": "\"PT Serif\", Georgia, serif",
+            "font-size": "18px",
+            "font-weight": "inherit",
+            "line-height": "30px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font4": {
+            "font-family": "\"PT Serif\", Georgia, serif",
+            "font-size": "14px",
+            "font-weight": "inherit",
+            "line-height": "26px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font5": {
+            "font-family": "\"PT Sans\", Tahoma, Geneva, sans-serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "26px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font6": {
+            "font-family": "\"PT Sans\", Tahoma, Geneva, sans-serif",
+            "font-size": "15px",
+            "font-weight": "400",
+            "line-height": "25px",
+            "color": "@color-swatch6",
+            "color-hover": "@color-swatch4",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch7",
+            "background-color-hover": "@color-swatch7"
+        },
+        "font7": {
+            "font-family": "\"PT Sans\", Tahoma, Geneva, sans-serif",
+            "font-size": "15px",
+            "font-weight": "400",
+            "line-height": "25px",
+            "color": "#ffffff",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch3",
+            "background-color-hover": "lighten(@color-swatch3,10%)"
+        },
+        "font8": {
+            "font-family": "\"PT Serif\", Georgia, serif",
+            "font-size": "24px",
+            "font-weight": "400",
+            "line-height": "34px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font9": {
+            "font-family": "\"PT Serif\", Georgia, serif",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "24px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font10": {
+            "font-family": "\"PT Serif\", Georgia, serif",
+            "font-size": "28px",
+            "font-weight": "400",
+            "line-height": "40px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        }
+    }
+}
