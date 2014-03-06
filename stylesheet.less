@@ -447,7 +447,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 
                .menu-items {
                     width: 100%;
-
+                    display: block;
                     li { /* menu-item */
                         position: relative;
                         display: block;
@@ -458,7 +458,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
                             border-bottom: 1px dotted fade(@color-swatch6,20%);
                         }
                         &.menu-item-promoted { /* menu-item-promoted */
-                            display: inline-block;
+                            display: block;
                             .inner-item {
                                 &:before { 
                                     content: "\2605";
@@ -478,7 +478,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
                         }/* end menu-item-promoted */
 
                         .inner-item {
-                            display: inline-block;
+                            display: block;
                             width:100%;
                             padding: 2em 0;
                             h3 { /* menu-item-name */  
@@ -584,11 +584,9 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
                                     display: none;
                                 }
                             } /* end menu-section-item-dietary-props */  
-
+                        .clearfix;
                         } /* end inner-item */
-
                     } /* end li menu-item */
-
                 } /* end ol */  
                 .menu-subsection {
                     padding: 0;
