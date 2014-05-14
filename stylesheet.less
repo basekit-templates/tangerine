@@ -11,22 +11,19 @@ body {
    CUSTOM CSS
    =============================== */
 
-.desktop {
+.canvas {
   width: 95%;
   margin: 1em auto;
   @media only screen and (min-width: 1290px) {
         width: 1260px;
         margin: 1em auto;
     }
-  @media @tablet {
-    display: none;
-  }
 }
 
 .tablet-mob {
     display: none;
     margin: 0 auto;
-    width: 95%;
+    width: 100%;
     @media @tablet {
         display: block;
         background: @color-swatch1;
@@ -86,32 +83,34 @@ body {
             }
         }
         &.companyaddress p, &.clicktocall a {
-            color: @color-swatch4;
+            color: @color-swatch6;
         }
     }
     .widget.clicktocall {
-        border: 1px dotted darken(@color-swatch7,15%);
-        background-color: darken(@color-swatch7,3%);
+        border: 1px dotted @color-swatch2;
+        background-color: darken(@color-swatch7,2%);
         text-align: center;
         padding: 1em 0;
     }
+    @media @tablet {
+        display: none;
+    }
 }
-
-.right {
-  float: left;
-  width: 75%;
-  @media only screen and (min-width: 1290px) {
-      width: 960px;
-  }
-}
-
 
 .main {
     background-color: @color-swatch2;
     padding: 3.4em 4em;
+    float: left;
+    width: 74%;
+    @media only screen and (min-width: 1290px) {
+        width: 960px;
+    }
     @media @tablet {
-        padding: 5%;
-        float: left;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .widget {
+        clear: both;
     }
 }
 
@@ -145,6 +144,9 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
       float: none;
       @media @tablet {
         padding: 0.8em 0 0;
+      }
+      img {
+        max-width: 100%;
       }
     }
     @media @tablet {
@@ -807,7 +809,29 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 .blog-post-item {
     margin: 1.5em 0;
     padding-bottom: 1em;
+    .blog-post-feature-image-wrap {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 400px;
+        background-position: center;
+        margin: 2em auto;
+        @media @tablet {
+            height: 300px;
+        }
+        @media @mobile {
+            width: 100%;
+            height: 250px;
+            margin: 1em auto;
+        }
+        img {
+            display: none;
+        }
+    }
     h2 {
+        padding: 0.5em 0;
+        @media @mobile {
+            padding: 0.5em 0 0;
+        }
         a {
             font-family: @font-swatch2-font-family;
             font-size: @font-swatch2-font-size;
@@ -842,9 +866,17 @@ width: 100%;
 /* BLOG SEARCH */
 .blogsearch {
     form {
+        label {
+            display: block;
+        }
         input {
             border: 1px solid darken(@color-swatch2,10%);
+            height: 47px;
+            margin-bottom: 5px;
+            @media @tablet {
+                width: 100%;
             }
+        }
 
         button {
             padding: 10px;
@@ -890,4 +922,11 @@ hr {
     }
 }
 
+/* ===============================
+  PRODUCTS LIST WIDGET
+   =============================== */
+
+.widget.ecomproductslist .ecom-productslist-image-wrap {
+    background-color: @color-swatch2;
+}
 
