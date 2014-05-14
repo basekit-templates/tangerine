@@ -4,7 +4,7 @@
 
 <div class="bk-pt-homepage">
 
-<div class="desktop clearfix">
+<div class="canvas clearfix">
     <div class="left">
         <header class="bk-header companyheader clearfix">
             {{widget('logo', 'desktoplogo', {"defaultlogo": asset('images/logo.png')})|raw}}
@@ -14,12 +14,6 @@
         {{widget('companyaddress', 'desktopcompanyaddress', {})|raw}}
         {{widget('clicktocall', 'desktopclicktocall', {phoneText: '212 6574 6736'})|raw}}
     </div> <!-- end left -->
-    <div class="right clearfix">
-        <div class="main wrapper clearfix">
-            {{zone('main')|raw}}
-        </div>  <!-- end main -->
-    </div><!-- end right -->
-</div><!-- end desktop -->
 
 
 <div class="tablet-mob wrapper clearfix">
@@ -30,10 +24,13 @@
     </header>  
     {{widget('companyaddress', 'tabletcompanyaddress', {})|raw}}
     {{widget('clicktocall', 'tabletclicktocall', {phoneText: '212 6574 6736'})|raw}}     
-<div class="main wrapper clearfix">
-    <!-- removed menu widgets -->
-</div> <!-- end main -->
 </div><!-- end tablet-mob -->
+
+<div class="main wrapper clearfix">
+    {{zone('main')|raw}}
+</div>  <!-- end main -->
+
+</div><!-- end canvas -->
 
 </div>
 
