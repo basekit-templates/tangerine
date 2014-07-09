@@ -12,51 +12,11 @@ body {
    =============================== */
 
 .canvas {
-  width: 95%;
-  margin: 1em auto;
-  @media only screen and (min-width: 1290px) {
+    width: 95%;
+    margin: 1em auto;
+    @media only screen and (min-width: 1290px) {
         width: 1260px;
         margin: 1em auto;
-    }
-}
-
-.tablet-mob {
-    display: none;
-    margin: 0 auto;
-    width: 100%;
-    @media @tablet {
-        display: block;
-        background: @color-swatch1;
-    }
-    .widget {
-        &.companyaddress, &.clicktocall {
-            float: left;
-            width: 90%;
-            margin: 0 5%; 
-            text-align: center;
-        }
-        &.companyaddress {
-            padding: 0 0 2em;
-            p {
-                padding-bottom: 0;
-            }
-        }
-        &.companyaddress p, &.clicktocall a {
-            color: @color-swatch4;
-        }
-    }
-    .widget.clicktocall {
-        border: 1px dotted darken(@color-swatch7,8%);
-        background-color: @color-swatch7;
-        text-align: center;
-        padding: 1em 0;
-        margin-bottom: 2em;
-        a {
-            background-color: transparent;
-            @media @mobile {
-                background-image:image('/images/ic-desktop-call.png');
-            }
-        }
     }
 }
 
@@ -91,9 +51,58 @@ body {
         background-color: darken(@color-swatch7,2%);
         text-align: center;
         padding: 1em 0;
+        a {
+            background-color: transparent;
+            background-image:image('/images/icon-phone-grey.png');
+            background-repeat: no-repeat;
+            background-position: left center;
+            padding-left: 25px;
+            background-size: 20px;
+        }
     }
     @media @tablet {
-        display: none;
+        margin: 0 auto;
+        width: 100%;
+        .widget {
+            &.companyaddress, &.clicktocall {
+                float: left;
+                width: 90%;
+                margin: 0 5%; 
+                text-align: center;
+            }
+            &.companyaddress {
+                padding: 1em 0;
+                p {
+                    padding-bottom: 0;
+                }
+            }
+            &.companyaddress p, &.clicktocall a {
+                color: @color-swatch4;
+            }
+        }
+        .widget.clicktocall {
+            border: none;
+            background-color: @color-swatch7;
+            text-align: center;
+            padding: 1em 0;
+        }
+    }
+}
+
+/* SVG Icons */
+
+.svg {
+    .left {
+        .widget.clicktocall a {
+            background-image: image('/images/icon-phone-grey.svg');
+            background-repeat: no-repeat;
+            background-position: left center;
+            padding-left: 25px;
+            background-size: contain;
+            @media @mobile {
+                background-size: 18px;
+            }
+        }
     }
 }
 
@@ -108,6 +117,10 @@ body {
     @media @tablet {
         width: 100%;
         margin: 0 auto;
+        padding: 3em;
+    }
+    @media @mobile {
+        padding: 2em;
     }
     .widget {
         clear: both;
@@ -129,8 +142,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
    HEADER
    =============================== */
 
- .bk-header {
-    background-color: @color-swatch7;
+.bk-header {
     display: block;
     padding: 1.4em 0 3.1em;
     float: none;
@@ -142,9 +154,6 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
     .logo {
       text-align: center;
       float: none;
-      @media @tablet {
-        padding: 0.8em 0 0;
-      }
       img {
         max-width: 100%;
         @media @tablet {
@@ -153,15 +162,10 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
         }
       }
     }
-    @media @tablet {
-        background: @color-swatch1;
-    }
     @media @mobile {
         padding: 1.4em 0 1.5em;
     }
- }
-
-
+}
 
 
 /* ===============================
@@ -171,14 +175,13 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 .widget {
     &.extendednavigation {
         z-index: 9999;
-        float: left;
         position: relative;
         width: 100%;
         margin-bottom: 1em;
         min-height: 40px;
         @media @tablet {
-            background-color: @color-swatch7;
-            float: left;
+            background-color: darken(@color-swatch7,3%);
+            border: 1px solid darken(@color-swatch7,4%);
         }
         li {
             ul {
@@ -187,9 +190,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
         }
         ul {
             background-color: @color-swatch7;
-            float: none;
             margin: 0 auto;
-            text-align: center;
             padding: 0;
             @media @tablet {
                 /* Hidden until nav icon is clicked */
@@ -197,10 +198,9 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
                 /* Then these styles are applied */
                 width: 100%;
                 margin: 0;
-                padding: 50px 0 0;
+                padding: 50px 0;
             }
             li {
-                float: left;
                 width: 100%;
                 border-bottom: 1px solid darken(@color-swatch7,8%);
                 display: block;
@@ -225,12 +225,12 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
                         li {
                             display: block;
                             width: 100%;
-                                .box-sizing {
-                                    a {
-                                        display: block;
-                                        padding: 0;
-                                    }
+                            .box-sizing {
+                                a {
+                                    display: block;
+                                    padding: 0;
                                 }
+                            }
                         }
                     }
                 }
@@ -310,7 +310,6 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
                 }
             }
         }
-
         a {
            &.pull {
                display: none;
@@ -321,7 +320,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
                    height: 44px;
                    position: absolute;
                    top: -3px;
-                   left: 48.5%;
+                   left: 48%;
                    &:hover {
                        cursor: pointer;
                    }
@@ -684,6 +683,11 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
         border: 1px solid darken(@color-swatch2,10%);
         background-color: #ffffff;
         height: 47px;
+        @media @mobile {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
     }
     .signupform fieldset button, .widget.profile form button {
         padding: 0 15px;
