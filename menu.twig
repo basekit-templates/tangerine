@@ -11,25 +11,16 @@
             {{widget('logo', 'desktoplogo', {"defaultlogo": asset('images/logo.png')})|raw}}
             {{widget('companyname', 'desktopcompanyname', {"business": "profile"})|raw}}
         </header>  
-        {{widget('extendednavigation', 'desktopnav', {})|raw}}
+        <div class='nav'>
+            {{widget('extendednavigation', 'navigationheader', {"align":"left"})|raw}}
+        </div>
         {{widget('companyaddress', 'desktopcompanyaddress', {})|raw}}
         {{widget('clicktocall', 'desktopclicktocall', {phoneText: '212 6574 6736'})|raw}}
     </div> <!-- end left -->
 
-
-<div class="tablet-mob wrapper clearfix">
-    {{widget('extendednavigation', 'tabletnav', {})|raw}}
-     <header class="bk-header companyheader clearfix">
-        {{widget('logo', 'tabletlogo', {"defaultlogo": asset('images/logo.png')})|raw}}
-        {{widget('companyname', 'tabletcompanyname', {"business": "profile"})|raw}}
-    </header>  
-    {{widget('companyaddress', 'tabletcompanyaddress', {})|raw}}
-    {{widget('clicktocall', 'tabletclicktocall', {phoneText: '212 6574 6736'})|raw}}     
-</div><!-- end tablet-mob -->
-
-<div class="main wrapper clearfix">
-    {{zone('main')|raw}}
-</div>  <!-- end main -->
+    <div class="main wrapper clearfix">
+        {{zone('main')|raw}}
+    </div>  <!-- end main -->
 
 </div><!-- end canvas -->
 
